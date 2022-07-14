@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Let's do it</title>
+	<link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("pass").value;
+        var confirmPassword = document.getElementById("confirmPass").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+  <div class="wrapper">
+  <div class="left">
+    <img src="logo.png" alt="logo">
+  </div>
+  <div class="right">
+    <h5>This is not a real online service! You know you need something<br>
+      like thisin your life to help you realize your deepest dreams.<br>
+      Sign up <i>now</i> to get started.<br><br>
+      
+      You <i>know</i> you want to.</h5><br><br>
+    <div class="tabs">
+        <h4>Let's do this!</h4>
+    </div>
+    
+    <div class="register">
+      <div class="input_field">
+        <input type="text" name="fname" placeholder="First Name" class="input" required>
+      </div>
+      <div class="input_field">
+        <input type="text" name="lname" placeholder="Last Name" class="input" required>
+      </div>
+      <div class="input_field">
+        <input type="email" name="email" placeholder="E-mail" class="input" required>
+      </div>
+      <div class="input_field">
+        <input type="number" name="phone" placeholder="Phone Number" class="input" required>
+      </div>
+      <div class="input_field">
+        <input type="password" id="pass" placeholder="Password" class="input">
+      </div>
+      <div class="input_field">
+        <input type="password" id="confirmPass" placeholder="Confirm Password" class="input">
+      </div>
+      <div class="btn"><input type="button" class="button" value="Create Account" onclick="return Validate()"></div>
+      <h5>Already have an account? <a href="#">Log in</a></h5>
+    </div>    
+  </div>
+</div>
+</body>
+</html>
